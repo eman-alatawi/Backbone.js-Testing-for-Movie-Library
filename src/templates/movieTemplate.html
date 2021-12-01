@@ -1,0 +1,27 @@
+<script type="x-handlebars" id="movie-tmpl">
+  <h2> hekko </h2>
+
+  <h1 class="movie-name">{{name}}</h1>
+
+  <h4 class="rating">{{rating}}</h4>
+
+  <ul class="types">
+
+  {{#each types}}
+
+  <li class="type">{{genre}}</li>
+
+  {{/each}}
+
+  </ul>
+
+  <ol class="comments">
+
+  {{#each comments}}
+
+  <li class="comment">{{this}}</li>
+
+  {{/each}}
+
+  </ol>
+</script>
